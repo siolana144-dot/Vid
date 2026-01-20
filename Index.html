@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Video Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: #ffffff;
+      font-family: Arial, sans-serif;
+    }
+
+    .btn {
+      width: 220px;
+      padding: 18px;
+      margin: 10px 0;
+      background: #ff0000;
+      color: #ffffff;
+      border: none;
+      border-radius: 12px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .btn:hover {
+      background: #e60000;
+    }
+  </style>
+</head>
+<body>
+
+  <button class="btn" onclick="playVideo1()">
+    ▶ Play Video
+  </button>
+
+  <button class="btn" onclick="playVideo2()">
+    ▶ Play Video 2
+  </button>
+
+  <script>
+    function playVideo1() {
+      window.location.href = "https://provider.media/video1";
+    }
+
+    function playVideo2() {
+      window.location.href = "https://provider.media/video2";
+    }
+  </script>
+
+</body>
+</html>
